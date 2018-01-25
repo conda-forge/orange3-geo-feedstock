@@ -1,6 +1,6 @@
 {% set name = "Orange3-Geo" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "b7ca090c37aac254f0d3e791a0cd73638ddd97f5bd2cf7bbad975b94afab4fb0" %}
+{% set version = "0.2.2" %}
+{% set sha256 = "4b2b2099314157706f6ef1f1c79e2158703e8b76fb4f16f0d655af768b0ca948" %}
 
 package:
   name: {{ name|lower }}
