@@ -1,6 +1,6 @@
 {% set name = "Orange3-Geo" %}
-{% set version = "0.2.3" %}
-{% set sha256 = "a1e3cd53d7bd8f75018aa2296a5fe7e8eb79d6069dddcc498c0ff290569a0abc" %}
+{% set version = "0.2.4" %}
+{% set sha256 = "68c559aac716f7519a03757165f5227e412eb001e23bbf5a0887ee5922bf5e2b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [py2k]
 
