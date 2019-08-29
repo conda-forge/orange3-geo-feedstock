@@ -1,6 +1,6 @@
 {% set name = "Orange3-Geo" %}
-{% set version = "0.2.4" %}
-{% set sha256 = "68c559aac716f7519a03757165f5227e412eb001e23bbf5a0887ee5922bf5e2b" %}
+{% set version = "0.2.4.post1" %}
+{% set sha256 = "d5e0b445e3d889fe8e7a60e5f468c0a100efc0f57e10f6b0c2cbd6049709ef48" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 10
+  noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
