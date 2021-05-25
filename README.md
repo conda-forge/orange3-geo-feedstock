@@ -119,5 +119,7 @@ Feedstock Maintainers
 
 * [@jakakokosar](https://github.com/jakakokosar/)
 * [@lanzagar](https://github.com/lanzagar/)
+* [@primozgodec](https://github.com/primozgodec/)
 * [@robertcv](https://github.com/robertcv/)
+* [@vesnaT](https://github.com/vesnaT/)
 
