@@ -1,6 +1,6 @@
 {% set name = "Orange3-Geo" %}
-{% set version = "0.3.2" %}
-{% set sha256 = "52cd05e3951ce56139ae7518629ab2b6b14d4c1e59881c4ff53ae6f434ec2312" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "e5ee57ae665007976c16a9eefdfa77bc2c568ca0fe05da3cf81fc2cac8d6c24b" %}
 
 package:
   name: {{ name|lower }}
@@ -27,6 +27,7 @@ requirements:
     - scikit-learn
     - pandas
     - scipy >=0.17
+    - pyproj
     - shapely
     - simplejson
     - pillow
