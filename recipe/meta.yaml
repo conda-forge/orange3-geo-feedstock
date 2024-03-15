@@ -23,12 +23,12 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - orange3 >=3.31.0
+    - orange3 >=3.34.0
     - scikit-learn
     - pandas
     - scipy >=0.17
-    - pyproj
     - shapely
+    - pyproj
     - simplejson
     - pillow
 
