@@ -21,6 +21,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
     - pip
+    - trubar >=0.3.3
   run:
     - python >={{ python_min }}
     - orange3 >=3.37
