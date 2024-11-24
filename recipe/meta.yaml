@@ -1,6 +1,6 @@
 {% set name = "Orange3-Geo" %}
-{% set version = "0.4.2" %}
-{% set sha256 = "0c4578256a5cfa083a1fa875b958ddeb77caf2d0167231364eaa3d839edbd6c8" %}
+{% set version = "0.5" %}
+{% set sha256 = "b669479835e16cf9bda02881c9715e13919075d52361634a981cb0461d43cee3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -18,12 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - pip
+    - trubar >=0.3.3
   run:
-    - python >=3.6
-    - orange3 >=3.34.0
+    - python >={{ python_min }}
+    - orange3 >=3.37
     - scikit-learn
     - pandas
     - scipy >=0.17
@@ -33,6 +34,8 @@ requirements:
     - pillow
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - orangecontrib.geo
 
