@@ -1,6 +1,6 @@
 {% set name = "Orange3-Geo" %}
-{% set version = "0.5" %}
-{% set sha256 = "b669479835e16cf9bda02881c9715e13919075d52361634a981cb0461d43cee3" %}
+{% set version = "0.6" %}
+{% set sha256 = "f06cc3236314248da002b697e0160283b3928f30f99ade6e433e255bb603a9bd" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
